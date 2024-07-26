@@ -1,5 +1,5 @@
 {
-	"homepage": "url",
+	"homepage": "https://jos-cabrera.github.io/TODO-List",
 	"predeploy": "npm run build",
 	"deploy": "gh-pages -d build",
 	"name": "todo-list",
