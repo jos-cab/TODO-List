@@ -1,0 +1,102 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	background: linear-gradient(#78e9e9, #6570eb);
+	margin: 0;
+	min-height: 100vh;
+}
+
+main {
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.add-item {
+	max-width: 300px;
+	margin-bottom: 25px;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0 10px;
+	max-width: 95vw;
+}
+
+td {
+	padding: 10px;
+}
+
+thead tr td:nth-child(2),
+thead tr td:nth-child(3) {
+	font-size: 1em;
+	overflow-wrap: break-word;
+	text-align: center;
+}
+
+thead tr td:nth-child(2) {
+	padding: 0 0.2em 0 0;
+}
+
+thead tr td:nth-child(3) {
+	padding: 0 0 0 0.2em;
+}
+
+table tr:not(thead tr) {
+	font-size: 1em;
+	color: rgb(24, 24, 24);
+	box-shadow: 0 0 5px 1px rgb(29, 29, 29);
+	background-color: rgb(219, 219, 219);
+}
+
+thead tr td {
+	font-size: 1.5em;
+	text-transform: capitalize;
+}
+
+td button {
+	margin: 0 50%;
+	transform: translateX(-50%);
+}
+
+input[type="checkbox"] {
+	transform: scale(2) translateX(-25%);
+	margin-left: 50%;
+}
+
+@media (min-width: 768px) {
+	td:nth-child(3) {
+		max-width: 4em;
+	}
+
+	td:nth-child(2) {
+		max-width: 6em;
+	}
+
+	table tr:not(thead tr) {
+		font-size: 1.25em;
+	}
+
+	thead tr td {
+		font-size: 2em;
+	}
+
+	thead tr td:nth-child(2),
+	thead tr td:nth-child(3) {
+		font-size: 2em;
+	}
+
+	thead tr td:nth-child(3) {
+		max-width: 4em;
+	}
+
+	thead tr td:nth-child(2) {
+		max-width: 6em;
+	}
+}
